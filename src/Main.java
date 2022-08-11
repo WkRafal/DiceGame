@@ -5,8 +5,10 @@ public class Main {
     public static void main(String[] args) {
 
         Player player = new Player();
-
         Random random = new Random();
+
+        player.setName("Zuza");
+
         int rzutKomp;
         int gracz;
 
@@ -14,13 +16,13 @@ public class Main {
             rzutKomp = random.nextInt(6) + 1;
             System.out.println("komputer wylosowal " + rzutKomp);
             gracz = player.guess();
-            System.out.println("gracz wylosowal " + gracz);
+            System.out.println(player.getName() + " daje " + gracz);
 
             if (rzutKomp != gracz)
-                System.out.println("przegrałes");;
+                System.out.println("Przegrana");;
 
         }while (rzutKomp != gracz);
 
-        System.out.println("wygrałeś");
+        System.out.println("Wygrana");
     }
 }
