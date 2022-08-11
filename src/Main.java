@@ -4,10 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Player player = new Player();
+        Player player = new Player("Zuza");
         Random random = new Random();
-
-        player.setName("Zuza");
 
         int rzutKomp;
         int gracz;

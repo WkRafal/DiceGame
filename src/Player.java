@@ -1,10 +1,16 @@
-import java.util.Objects;
 import java.util.Random;
 
 public class Player {
 
     private Random rand = new Random();
     private String name = "janusz";
+
+    public Player() {
+    }
+
+    public Player(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;
